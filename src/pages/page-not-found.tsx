@@ -1,0 +1,22 @@
+import React, { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
+
+const PageNotFound: FunctionComponent = () => {
+  return (
+    <div className="center">
+      <img
+        src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png"
+        alt="Page non trouvée"
+      />
+      <h1>Hey, cette page n'existe pas !</h1>
+      <Link
+        to="/"
+        className="waves-effect waves-light btn #a7ffeb teal accent-1 black-text"
+      >
+        RETOURNER A L ACCUEIL
+      </Link>
+    </div>
+  );
+};
+
+export default PageNotFound;
